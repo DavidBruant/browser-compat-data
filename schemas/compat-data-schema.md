@@ -240,7 +240,7 @@ In some cases features are named entirely differently and not just prefixed. Exa
 Note that you can’t have both `prefix` and `alternative_name`.
 
 #### `flags`
-An optional array of objects indicating what kind of flags must be set for this feature to work. Usually this array will have one item, but there are cases where two or more flags can be required to activate a feature.
+An optional array of objects indicating what kind of flags must be set for this feature to work. Usually this array will have one item, but there are cases where two or more flags can be required to activate a feature. Absence of this array indicates that the feature works by default without having to opt-in to anything.
 An object in the `flags` array consists of three properties:
 * `type` (mandatory): an enum that indicates the flag type:
   * `preference` a flag the user can set (like in `about:config` in Firefox).
